@@ -1,5 +1,5 @@
-# Redux Test
-git clone https://github.com/coolworld2015/rd-test.git
+# Webpack Test
+git clone https://github.com/coolworld2015/wp-test.git
 -------------------------------------------------------------------------------------------------
 Install only in root !!! 
 -------------------------------------------------------------------------------------------------
