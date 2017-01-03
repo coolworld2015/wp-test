@@ -33,7 +33,7 @@ class AppCtrl {
 			controller: controller1
 		})
 		.component('clientsComponent', {
-			template: '<div ng-repeat="client in vm.clients">{{client.name}}</div>',
+			templateUrl: require('./src/clients/clients.html'),
 			bindings: {clients: '<'}, 
 			controllerAs: 'vm',
 			controller: controller2
