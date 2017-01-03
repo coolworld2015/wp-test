@@ -1,5 +1,5 @@
 {
-  "name": "redux-test",
+  "name": "webpack-test",
   "scripts": {
     "postinstall": "npm run build",
     "build": "webpack",
