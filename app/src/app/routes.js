@@ -46,7 +46,13 @@ let routesConfig = ($stateProvider, $urlRouterProvider) => {
 			resolve: {
 				goods: resolveHerokuGoods
 			}
-		 })						 
+		 })				
+
+		.state('pokemons', {
+			url: '/pokemons',
+			template: '<header-component title="Pokemons"></header-component>' + 
+					  '<pokemons-component></pokemons-component>'
+		 })			 
 }
 
 export default routesConfig;

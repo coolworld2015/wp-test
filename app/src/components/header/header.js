@@ -1,13 +1,10 @@
 module.exports = {
-	template: '<div><hr>' +
-					'<a ui-sref="home">Home</a>&nbsp' +
-					'<a ui-sref="clients">Clients</a>&nbsp' + 
-					'<a ui-sref="goods">Goods</a>' +
-					'&nbsp&nbsp&nbsp&nbsp&nbsp <b>{{vm.title}}</b>' +
-				  '<hr></div>',
+	templateUrl: require('./header.html'),
 	bindings: {title: '@'}, 
 	controllerAs: 'vm',			
-	controller: app
+	controller: Ctrl
 }
 
-let app = () => {vm: this};
+function Ctrl() {
+	let vm = this;
+}
