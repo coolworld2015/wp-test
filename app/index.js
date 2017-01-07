@@ -15,4 +15,3 @@ angular
 	.component('clientsComponent', ClientsComponent)
 	.component('goodsComponent', GoodsComponent)
 	.config(routesConfig);
-
