@@ -5,15 +5,15 @@ module.exports = {
 	controller: Ctrl
 }
 
+Ctrl.$inject = ['PokemonsService'];
 function Ctrl(PokemonsService) {
 	var vm = this;
 	vm.name = 'Pokemons';
 	PokemonsService.getPokemons()
 		.then((results) => {
 			vm.pokemons = results.data.sort(sort);
-			console.log(vm.pokemons);
+			//console.log(vm.pokemons);
 		})
-	
 }
 
 function sort(a, b) {

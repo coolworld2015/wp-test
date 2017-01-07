@@ -25,5 +25,5 @@ class ClientsCtrl {
 function Ctrl() {
 	let vm = this;
 	vm.name = 'Clients';
-	console.log(vm);
+	//console.log(vm);
 }

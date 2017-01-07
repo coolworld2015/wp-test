@@ -8,6 +8,7 @@ class PokemonsService {
 		return this.$http.get(url)
 	}
 }
+PokemonsService.$inject = ['$http'];
 
 export default PokemonsService;
  

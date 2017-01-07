@@ -1,6 +1,8 @@
-let routesConfig = ($stateProvider, $urlRouterProvider) => {
+routesConfig.$inject = ['$stateProvider', '$urlRouterProvider'];
+function routesConfig($stateProvider, $urlRouterProvider) {
 	
-	let resolveHerokuClients = ($http, $q) => {
+	resolveHerokuClients.$inject = ['$http', '$q'];
+	function resolveHerokuClients($http, $q) {
 		let url = 'http://ui-warehouse.herokuapp.com/api/clients/get';
 		return $http.get(url)
 			.then((result) => {
@@ -9,9 +11,10 @@ let routesConfig = ($stateProvider, $urlRouterProvider) => {
 			.catch((reject) => {
 				return $q.reject(reject);
 			});
-	}			
+	}		
 	
-	let resolveHerokuGoods = ($http, $q) => {
+	resolveHerokuGoods.$inject = ['$http', '$q'];
+	function resolveHerokuGoods($http, $q) {
 		let url = 'http://ui-warehouse.herokuapp.com/api/goods/get';
 		return $http.get(url)
 			.then((result) => {

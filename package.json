@@ -3,6 +3,7 @@
   "scripts": {
     "postinstall": "npm run build",
     "build": "webpack",
+    "release": "webpack -p --config ./webpack.release.js",
     "start": "webpack-dev-server"
   },
   "devDependencies": {
@@ -26,6 +27,7 @@
     "react-redux": "^4.4.5",
     "react-router": "^2.8.1",
     "react-router-redux": "^4.0.6",
-    "redux": "^3.6.0"
+    "redux": "^3.6.0",
+    "uglify-js-plugin": "0.0.6"
   }
 }

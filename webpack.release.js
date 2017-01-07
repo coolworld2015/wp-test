@@ -1,5 +1,6 @@
 var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var UglifyJsPlugin = require('uglify-js-plugin');
 
 module.exports = {
     entry: './app/index.js',
@@ -35,6 +36,10 @@ module.exports = {
         ]
     },
     plugins: [
-        new ExtractTextPlugin('styles.css')
+        new ExtractTextPlugin('styles.css'),
+		new UglifyJsPlugin({
+            compress: true, //default 'true', you can pass 'false' to disable this plugin 
+            debug: true //default 'false', it will display some information in console 
+        })
     ]
 };
